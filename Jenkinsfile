@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/sahana-nd/java-docker-jenkins.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
